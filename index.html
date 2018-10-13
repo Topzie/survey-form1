@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:200|Barlow:400,600" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="default.css" />
+    <title>Free Code Camp Survey</title>
+  </head>
+
+  <body>
+    <header class="green">
+      <h1 id="title"><i class="fab fa-free-code-camp orange"></i> freecodeCamp Survey</h1>
+    </header>
+    <div class="wrapper">
+      <form id="survey-form">
+        <div id="personal">
+          <h3>First, tell us something about you</h3>
+          <p id="description">Let us know how we can improve Free Code Camp</p>
+          <label for="name" id="name-label">Name</label>
+          <input type="text" id="name" placeholder="Your name" required /><br />
+          <label for="email" id="email-label">Email</label>
+          <input type="email" id="email" placeholder="you@example.mail" required /><br />
+          <label for="number" id="number-label">Age&nbsp;</label>
+          <input type="number" id="number" min="10" max="99" placeholder="Age in numbers" required /><br />
+          <div id="personal2">
+            <h4>Which option describes your current role?</h4>
+            <select id="dropdown" required>
+              <option value="" disabled selected>Select an option</option>
+              <option value="student">Student </option>
+              <option value="full-time-job">Full time job</option>
+              <option value="full=time-learner">Full time learner</option>
+              <option value="prefer-not-to-say">Prefer not to say</option>
+              <option value="other">Other</option>
+            </select>
+            <h4>What do you like most in FCC?</h4>
+            <select id="likes" required>
+              <option value="" disabled selected>Select an option</option>
+              <option value="challenges">Challenges</option>
+              <option value="projects">Projects</option>
+              <option value="community">Community</option>
+              <option value="open-source">Open Source</option>
+              <option value="all-above">All Above</option>
+            </select>
+          </div>
+        </div> <!-- eof personal -->
+        <div id="improve">
+          <h4>Which of the following things could be improved?</h4>
+          <div class="flexbox">
+            <label class="indent"><input type="checkbox" name="front-end-projects" value="Front-end Projects"> Front-end Projects</label><br>
+            <label class="indent"><input type="checkbox" name="back-end-projects" value="Back-end Projects"> Back-end Projects</label><br>
+            <label class="indent"><input type="checkbox" name="data-visualization" value="Data Visualization"> Data Visualization</label><br>
+            <label class="indent"><input type="checkbox" name="challenges" value="Challenges"> Challenges</label><br>
+            <label class="indent"><input type="checkbox" name="open-source-community" value="Open Source Community"> Open Source Community</label><br>
+            <label class="indent"><input type="checkbox" name="gitter-help-rooms" value="Gitter help rooms"> Gitter help rooms</label><br>
+            <label class="indent"><input type="checkbox" name="videos" value="Videos"> Videos</label><br>
+            <label class="indent"><input type="checkbox" name="city-meetups" value="City Meetups"> City Meetups</label><br>
+            <label class="indent"><input type="checkbox" name="wiki" value="Wiki"> Wiki</label><br>
+            <label class="indent"><input type="checkbox" name="forum" value="Forum"> Forum</label><br>
+            <label class="indent"><input type="checkbox" name="additional-courses" value="Additional Courses"> Additional Courses</label><br>
+          </div>
+        </div> <!-- eof improve -->
+        <div id="recommend">
+          <h4>Would you recommend us to your friends?</h4>
+          <div class="flexbox2">
+            <label for="yes">Yes<input name="score" type="radio" id="yes" value="yes" /></label>
+            <label for="no">No<input name="score" type="radio" id="no" value="no" /></label>
+            <label for="maybe">Maybe<input name="score" type="radio" id="maybe" value="maybe" /></label>
+          </div>
+        </div> <!-- eof recommend -->
+        <div id="suggestions">
+          <h4>Do you have any comments or suggestions?</h4>
+          <textarea id="message" placeholder="Enter your comments here..."></textarea>
+        </div> <!-- eof suggestions -->
+        <button type="submit" value="Send" id="submit">Send</button>
+      </form>
+    </div>
+    <footer> Coded by Topzie - <a href="https://Topzie.github.io">My Github Pages</a>
+    </footer>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+
+</html>
